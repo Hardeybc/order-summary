@@ -1,0 +1,608 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.jobregform {
+  background-color: bisque;
+  border-collapse: collapse;
+  width: 996.8px;
+  margin: 0 auto;
+}
+.jobregform input {
+  width: 319.65px;
+  box-shadow: inset 0 0 5px rgba(163, 206, 246, 0.5);
+  border-radius: 20px;
+  padding-left: 17px;
+}
+.jobregform input:hover {
+  background-color: royalblue;
+  color: black;
+}
+.jobregform select {
+  width: 100%;
+  border-radius: 10px;
+  padding-left: 10px;
+  box-shadow: inset 0 0 5px rgba(7, 7, 7, 0.5);
+}
+.jobregform input[type="submit"] {
+  width: 50%;
+  height: 20px;
+  padding: 0;
+  background-color: rgb(230, 224, 224);
+}
+.jobregform input[type="reset"] {
+  width: 50%;
+  padding: 0;
+  background-color: rgb(230, 224, 224);
+}
+.jobregform input[type="checkbox"] {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+}
+.jobregform input[type="submit"]:hover,
+.jobregform input[type="reset"]:hover {
+  background-color: rgba(85, 85, 29);
+}
+
+table td:hover {
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+table {
+  position: absolute;
+  left: 300px;
+  top: 40px;
+}
+.usertable {
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+.usertable th,
+.usertable td {
+  padding: 10px;
+}
+.usertable tr:hover {
+  background-color: rgb(230, 227, 227);
+}
+.usertable thead:nth-child(1) {
+  background-color: green;
+}
+.usertable tr:nth-child(even) {
+  background-color: green;
+}
+
+.top {
+  position: fixed;
+  top: 530px;
+  right: 20px;
+  display: block;
+  width: 45px;
+  height: 45px;
+  z-index: 1000;
+  border-style: solid;
+  border-color: red;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+  line-height: 45px;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.h1 {
+  position: relative;
+  display: inline;
+  font-family: verdana;
+  font-size: 20px;
+  font-weight: lighter;
+  color: crimson;
+  font-style: oblique;
+  text-decoration: underline;
+  text-transform: uppercase;
+  text-align: center;
+  stroke: darkblue;
+}
+
+div {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100px;
+}
+
+div img {
+  position: relative;
+  display: block;
+  width: 250px;
+  height: 250px;
+  background: url("images/category-3.jpg") no-repeat;
+  background-size: cover;
+  border-style: none;
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+  margin-top: 200px;
+}
+
+.nav {
+  position: fixed;
+  width: 100;
+  height: 70px;
+  background-color: green;
+  z-index: 1;
+}
+
+.navmenu {
+  position: relative;
+  list-style: none;
+  float: right;
+  line-height: 70px;
+}
+
+.navmenu li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.navmenu li a {
+  text-decoration: none;
+  padding: 7px;
+  color: black;
+  font-weight: bold;
+  font-family: verdana;
+}
+
+.navmenu li a:hover {
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  color: blue;
+  border-bottom-style: solid;
+  border-width: 1px;
+  border-color: red;
+}
+
+.dropdown {
+  position: relative;
+  display: block;
+  background-color: black;
+  border: 1px solid #aaa;
+  width: 120px;
+  height: 80px;
+  top: 70px;
+  left: 1170px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+.logoimg {
+  display: inline-block;
+  margin: 5px 0 0 5px;
+  width: 120px;
+  height: 65px;
+}
+
+.wrapper {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 600px;
+  background: url("../images/polo-logo.png");
+  background-size: cover;
+}
+
+.box {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background-color: white;
+}
+
+.box {
+  animation: slide 5s linear 0s 3;
+  -webkit-animation: slide 5s linear 0s 3;
+  -moz-animation: slide 5s linear 0s 3;
+}
+
+@keyframes slide {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 760px;
+  }
+}
+
+.ball {
+  position: relative;
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-top-width: 125px;
+  border-bottom-width: 125px;
+  border-right-width: 125px;
+  border-left-width: 125px;
+  border-color: red green blue brown;
+  border-radius: 50%;
+}
+
+/*.ball{
+    animation-name: rotate;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+/*@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+        left: 0;
+    }
+    100%{
+        transform: rotate(360deg);
+        left: 760px;
+    }
+}*/
+
+.ball {
+  animation: bounce 0.5s ease-in 0s infinite alternate;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(250px);
+  }
+}
+
+.outer-box {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  background-color: orange;
+  width: 300px;
+  height: 300px;
+  top: 200px;
+  padding: 10px;
+}
+
+.inner-box {
+  position: absolute;
+  display: block;
+  background-color: white;
+  width: 50px;
+  height: 50px;
+}
+
+.inner-box {
+  animation: square 5s linear 0s infinite;
+  animation-duration: 7s;
+}
+
+@keyframes square {
+  0% {
+    transform: translate(0, 0);
+    animation-duration: 7s;
+  }
+  25% {
+    transform: translate(250px, 0);
+    animation-duration: 7s;
+  }
+  50% {
+    transform: translate(250px, 250px);
+    animation-duration: 7s;
+  }
+  75% {
+    transform: translate(0, 250px);
+    animation-duration: 7s;
+  }
+  100% {
+    transform: translate(0, 0);
+    animation-duration: 7s;
+  }
+}
+
+.gtb {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  /*width: 120px;
+    height: 120px;*/
+  font-size: 8rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: transparent;
+  font-family: fantasy;
+  margin-top: 70px;
+  text-align: center;
+  letter-spacing: -10px;
+}
+
+.gtb {
+  animation-name: display;
+  animation-duration: 5s;
+  animation-timing-function: ease-in;
+  animation-delay: 7s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes display {
+  0% {
+    color: white;
+    opacity: 1;
+  }
+  25% {
+    color: white;
+    opacity: 0.75;
+  }
+  50% {
+    color: white;
+    opacity: 0.5;
+  }
+  75% {
+    color: white;
+    opacity: 0.75;
+  }
+  100% {
+    color: white;
+    opacity: 1;
+  }
+}
+
+.contentbox {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  background-color: red;
+  top: 160px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  color: aquamarine;
+  font-size: 60px;
+  font-weight: bold;
+  font-family: Geneva;
+}
+
+.contentbox {
+  transition: transform ease-in 1s;
+}
+
+.contentbox:hover {
+  /*transform: scale(1.5);*/
+  /*transform: rotate(360deg);*/
+  transform: skew(360deg);
+  cursor: pointer;
+  background-color: brown;
+}
+
+
+/* .svgone {
+  position: absolute;
+  display: block;
+  background: url("../images/desktopbackgroundtwo.svg");
+  background-size: cover;
+  width: 1440px;
+  height: 350px;
+} */
+
+.outer-container {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  background-color: white;
+  width: 450px;
+  height: 600px;
+  top: -350px;
+  left: 10px;
+  border: 1px;
+  border-radius: 20px;
+}
+
+.image-container {
+  position: absolute;
+  display: block;
+  background: url("../images/illustration-hero.svg");
+  background-size: cover;
+  height: 220px;
+  width: 450px;
+  border: 1px;
+  border-radius: 20px 20px 0px 0px;
+
+}
+
+.summaryheader {
+  margin-top: -700px;
+  position: relative;
+  font-family: "Red Hat Display";
+  font-size: 24px;
+  text-align: center;
+}
+
+.summarypar-one {
+  position: relative;
+  font-family: "Red Hat Display";
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.inner-container {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  background-color: hsl(225, 100%, 98%);
+  width: 350px;
+  height: 70px;
+  top: 18px;
+  border: 1px;
+  border-radius: 10px;
+  left: 7px;
+}
+
+.inner-image {
+  position: absolute;
+  display: block;
+  background: url("../images/icon-music.svg");
+  background-size: cover;
+  width: 48px;
+  height: 48px;
+  top: 10px;
+  left: 20px;
+}
+
+.innerpar-one {
+  position: relative;
+  display: block;
+  font-family: "Red Hat Display";
+  font-size: 16px;
+  font-weight: 700;
+  left: 90px;
+  top: 13px;
+}
+
+.innerpar-two {
+  position: relative;
+  display: block;
+  font-family: "Red Hat Display";
+  font-size: 16px;
+  font-weight: 500;
+  left: 90px;
+  top: 17px;
+}
+
+.innerpar-three {
+  position: relative;
+  display: block;
+  font-family: "Red Hat Display";
+  font-size: 16px;
+  font-weight: 600;
+  left: 270px;
+  top: -11px;
+  color: hsl(224, 23%, 55%);
+}
+
+.inner-container-two {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  background-color: hsl(245, 75%, 52%);
+  width: 350px;
+  height: 40px;
+  top: 18px;
+  border: 1px;
+  border-radius: 10px;
+  left: 7px;
+}
+
+.innerpar-four {
+  position: relative;
+  display: block;
+  font-family: "Red Hat Display";
+  font-size: 16px;
+  font-weight: 900;
+  top: -10px;
+  color: white;
+  text-align: center;
+}
+
+.innerpar-five {
+  position: relative;
+  display: block;
+  font-family: "Red Hat Display";
+  font-size: 16px;
+  font-weight: 900;
+  color: hsl(224, 23%, 55%);
+  top: 10px;
+  text-align: center;
+}
+
+
+.metro-background {
+  position: absolute;
+  display: block;
+  width: 1550px;
+  height: 500px;
+  background: url("../images/techoffice1.jpg");
+  background-size: cover;
+
+}
+.metro-nav {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.metro-logo {
+  position: relative;
+  width: 130px;
+  height: 80px;
+}
+
+
+.metro-inner-container-one {
+  position: relative;
+  display: block;
+  background-color: #aaa;
+  width: 200px;
+  height: 40px;
+  top: -60px;
+  border: 1px;
+  border-radius: 10px;
+  left: 600px;
+}
+
+.metro-inner-container-two {
+  position: relative;
+  display: block;
+  background-color: #aaa;
+  width: 200px;
+  height: 40px;
+  top: -100px;
+  border: 1px;
+  border-radius: 10px;
+  left: 900px;
+}
+
+.metro-inner-container-three {
+  position: relative;
+  display: block;
+  background-color: #aaa;
+  width: 150px;
+  height: 40px;
+  top: -140px;
+  border: 1px;
+  border-radius: 10px;
+  left: 1200px;
+}
+
+.metropar-one {
+  position: relative;
+  display: block;
+  font-family: "Red Hat Display";
+  font-size: 16px;
+  font-weight: 900;
+  top: 10px;
+  text-align: center;
+}
+
+.metro-navtwo {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  top: 400px;
+  background-color: whitesmoke;
+  z-index: 1;
+}
+
